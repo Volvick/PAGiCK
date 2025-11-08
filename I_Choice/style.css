@@ -87,7 +87,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   footer {
-    margin-top: 11rem;
+    margin-top: 15rem;
   }
 }
 
@@ -107,7 +107,7 @@ footer {
     padding-top: 23rem;
   }
   footer {
-    margin-top: 53rem;
+    margin-top: 57rem;
   }
 }
 @media only screen and (max-width: 400px) {
