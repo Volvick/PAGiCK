@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGiCK | Support</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dlfsodrio/image/upload/v1762591456/icon_r1fh5s.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css?v=2" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../basestyle.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <div class="box">
+      <div class="main-heading">
+        <img
+          src="https://res.cloudinary.com/dlfsodrio/image/upload/v1762591457/volvick_gi2lev.jpg"
+          alt=""
+          class="volvick"
+        />
+      </div>
+      <h1>Contribute & Feedback</h1>
+      <p>Your support makes all the difference</p>
+      <hr />
+      <div class="btn-container">
+        <button onclick="toggleSharePopupMoney()">Contribute</button>
+        <button onclick="toggleSharePopup()">Share</button>
+        <a href="https://forms.gle/Hh5yUhPfEEqWr2yeA"
+          ><button>Feedback</button></a
+        >
+      </div>
+    </div>
+
+    <!-- money popup -->
+
+    <div class="sharePopupMoney popupMoney" id="share-popup-money">
+      <div class="sharePopupContent">
+        <i class="fa-solid fa-xmark" onclick="toggleSharePopupMoney()"></i>
+
+        <div class="money">
+          <div class="profile">
+            <img
+              src="https://res.cloudinary.com/dlfsodrio/image/upload/v1762591457/volvick_gi2lev.jpg"
+              alt=""
+              srcset=""
+            />
+            <p>
+              Volvick
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                />
+              </svg>
+            </p>
+          </div>
+          <div class="qr">
+            <a href="upi://pay?pa=volvick5050@okhdfcbank&pn=Volvick&cu=INR"
+              ><img src="./images/qr.jpg" alt=""
+            /></a>
+            <p>
+              UPI ID:
+              <a href="upi://pay?pa=volvick5050@okhdfcbank&pn=Volvick&cu=INR"
+                >volvick5050@okhdfcbank</a
+              >
+            </p>
+          </div>
+          <button class="copymain" onclick="copyUPI()">
+            <i class="fa-regular fa-clipboard"></i>Copy
+          </button>
+          <a
+            class="contri"
+            href="upi://pay?pa=volvick5050@okhdfcbank&pn=Volvick&cu=INR"
+            ><button>
+              <i class="fa-solid fa-indian-rupee-sign"></i>Contribute
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- share popup -->
+    <div class="sharePopup popup" id="share-popup">
+      <div class="sharePopupContent">
+        <i class="fa-solid fa-xmark" onclick="toggleSharePopup()"></i>
+        <h1>Share PAGiCK</h1>
+
+        <div class="share-buttons">
+          <button class="twitter" onclick="shareOnTwitter()">
+            <i class="fa-brands fa-x-twitter"></i> Twitter
+          </button>
+          <button class="facebook" onclick="shareOnFacebook()">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </button>
+          <button class="linkedin" onclick="shareOnLinkedIn()">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+          </button>
+          <button class="whatsapp" onclick="shareOnWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </button>
+          <button class="instagram" onclick="copyForInstagram()">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- footer text -->
+      <p>
+        © 2025 PAGiCK — A Project by
+        <a href="mailto:contact.volvick@gmail.com">Volvick</a>.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+body {
+  background: url(../asset/bg.png);
+}
+
+.box {
+  padding: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-family: "Instrument Serif", serif;
+  background-color: #fff;
+  border-radius: 12px;
+  color: #111;
+}
+
+.box img {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #f3f3f3;
+}
+
+.box h1 {
+  color: #292929;
+  font-family: "Instrument Serif", serif;
+  letter-spacing: 2px;
+}
+
+.box p {
+  color: #949494;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+}
+
+.box .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 30px;
+}
+
+.box button {
+  width: 100%;
+  background: rgb(19, 78, 60);
+  margin-top: 20px;
+  text-align: center;
+  padding: 1rem 4rem;
+  color: #fff;
+  border-radius: 400px;
+  cursor: pointer;
+}
+
+/* for feedback button */
+a {
+  width: 100%;
+}
+
+.box button:hover,
+.box button:active {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* money part */
+.sharePopupMoney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  top: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in-out;
+  color: #111;
+}
+
+.sharePopupContent {
+  background-color: #fff;
+  width: 320px;
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.092);
+  border-radius: 12px;
+}
+
+.fa-xmark {
+  cursor: pointer;
+  background-color: #fdefee;
+  color: #f29d94;
+  padding: 0.6rem 0.8rem;
+  border-radius: 500px;
+}
+
+.fa-xmark:hover,
+.fa-xmark:active {
+  transform: translateY(-2px);
+}
+
+button > i {
+  margin-right: 10px;
+}
+
+.sharePopupMoney.show {
+  opacity: 1;
+  transform: translateY(0);
+  top: 0;
+  pointer-events: auto;
+}
+.money .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.money .profile img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #f3f3f3;
+  margin: 0 10px;
+}
+
+.money .profile > p {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.money .qr {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.money .qr img {
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.money .qr > p {
+  margin: 0.6rem 0;
+}
+
+/* share popup */
+.sharePopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  top: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in-out;
+}
+.sharePopup.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  top: 0;
+}
+.fa-xmark {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-left: 90%;
+  font-size: 16px;
+  padding: 3px 8px;
+  margin-top: -10px;
+}
+
+.sharePopup .sharePopupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.092);
+  border-radius: 12px;
+  color: #111;
+}
+
+.sharePopup .share-buttons,
+.money {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sharePopup .share-buttons > button,
+.copymain,
+.contri > button {
+  width: 100%;
+  padding: 10px 10px;
+  background: transparent;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  font-size: 12px;
+  border: 1px solid #c8c8c8;
+  transition: all 0.3s ease-in-out;
+}
+
+.sharePopup .share-buttons > button:hover,
+.copymain:hover,
+.contri > button:hover {
+  border: 1px solid transparent;
+  background: rgb(19, 78, 60);
+  color: #fff;
+  cursor: pointer;
+}
+
+.sharePopup .sharePopupContent > h1 {
+  font-size: 20px;
+  font-weight: 500;
+}

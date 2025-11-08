@@ -1,0 +1,121 @@
+.dName {
+  font-weight: 500;
+  background-color: rgb(19, 78, 60);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 0px 4px;
+  margin: 0px 0;
+}
+.dDef {
+  color: #8d8d8d;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+.card {
+  padding-top: 10rem;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.card1 {
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid transparent;
+}
+.card1 > .imgContent {
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1 > .imgContent img {
+  width: 250px;
+  height: auto;
+}
+.card1 > .imgContent img:hover {
+  scale: 1.04;
+  cursor: pointer;
+}
+.btn a {
+  display: flex;
+  text-decoration: none;
+}
+
+.btn a > button {
+  margin-top: 10px;
+  flex-grow: 1;
+  padding: 8px 0px;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 500px;
+  cursor: pointer;
+  font-weight: 500;
+  align-items: center;
+  color: #ffffff;
+  border: 1px solid #dfdfdf;
+  background: rgb(19, 78, 60);
+}
+.btn a > button:hover,
+.btn a > button:active {
+  color: #fff;
+  border: 1px solid transparent;
+  opacity: 0.9;
+}
+
+.card1:has(.btn a > button:hover),
+.card1:has(.btn a > button:active) {
+  border: 1px solid rgb(233, 233, 233);
+}
+footer {
+  color: #111;
+  text-align: center;
+  padding: 1rem 0;
+  padding-top: 16rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    margin: 80px 0;
+    margin-top: 340px;
+    display: flex;
+    flex-flow: column;
+    gap: 0px;
+  }
+  .card1 {
+    margin: 10px 0;
+  }
+
+  .card {
+    padding-top: 23rem;
+  }
+  footer {
+    padding-top: 58rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card1 {
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+  .card1 {
+    width: 280px;
+  }
+  .card1 > .imgContent img {
+    width: 200px;
+  }
+}
