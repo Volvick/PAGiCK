@@ -14,7 +14,6 @@
   font-size: 12px;
 }
 .card {
-  padding-top: 10rem;
   height: 100vh;
   place-items: center;
   display: grid;
@@ -85,9 +84,10 @@ footer {
 @media only screen and (max-width: 1100px) {
   .card {
     grid-template-columns: 1fr 1fr;
+    margin-top: 11rem;
   }
   footer {
-    margin-top: 15rem;
+    margin-top: 4rem;
   }
 }
 
@@ -104,10 +104,10 @@ footer {
   }
 
   .card {
-    padding-top: 23rem;
+    margin-top: 43rem;
   }
   footer {
-    margin-top: 57rem;
+    margin-top: 31.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -119,5 +119,11 @@ footer {
   }
   .card1 > .imgContent img {
     width: 200px;
+  }
+  .card {
+    margin-top: 33rem;
+  }
+  footer {
+    margin-top: 22.5rem;
   }
 }
